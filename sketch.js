@@ -8,7 +8,7 @@ let carGo = false
 let carStop = false
 
 function preload(){
-  sun= loadImage('sun.png')
+  sun= loadImage('sunnn.png')
 }
 
 function setup() {

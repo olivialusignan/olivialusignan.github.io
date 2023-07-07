@@ -52,12 +52,13 @@ function winScreen(){
 	textSize(40)
 	text("YOU WON!", windowWidth/2, 50)
 
-	rotation ++
+	rotation++
+	
 
 	push()
 	translate(windowWidth/2, windowHeight/2)
-	image(furby, 0, 0)
 	rotate(radians(rotation))
+	image(furby, 0, 0)
 	pop()
 }
 
@@ -96,7 +97,7 @@ function start(){
 
 	print(mouseDist)
 
-	if(score == 2){
+	if(score == 10){
 	startBool = false
 	winBool = true
 	}
