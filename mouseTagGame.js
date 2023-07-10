@@ -97,7 +97,7 @@ function start(){
 
 	print(mouseDist)
 
-	if(score == 10){
+	if(score == 15){
 	startBool = false
 	winBool = true
 	}
