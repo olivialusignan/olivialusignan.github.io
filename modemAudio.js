@@ -13,6 +13,8 @@ let modem
 
 let selectBackground
 
+let airStrike
+
 let r = 0
 let b = 0
 let g = 0
@@ -21,7 +23,8 @@ let baby
 
 function preload(){
 	modem = loadSound('ModemSound.mp3')
-	baby = loadImage('dancingbaby2.gif')
+	baby = createImg('dancingbaby2.gif')
+	airStrikeFont = loadFont('airstrike.ttf')
 
 }
 
@@ -77,7 +80,12 @@ function playModem(){
 
 function draw(){
 	background(r, g, b)
-	background(baby)
+	textFont(airStrikeFont)
+	textSize(40)
+	fill(255)
+	text('Dancing Baby Site', windowWidth/2, 100)
+	baby.position(200, 200)
+	//background(baby)
 	level = amplitude.getLevel()
 	let size = map(level, 0, 0.6, 0, 900)
 	ellipse(width/2, height/2, size, size)
