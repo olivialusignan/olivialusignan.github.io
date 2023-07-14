@@ -1114,10 +1114,12 @@ text("Essence", 328, 624)
 textSize(32)
 text("Top Song:", 550, 200)
 
-}
-
 essence.setVolume(audioSlider.value())
 print(audioSlider.value())
+
+}
+
+
 
 function burnaBoy(){
 noMapMainScreen()
