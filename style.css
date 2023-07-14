@@ -1,3 +1,8 @@
+@font-face {
+  font-family: conthraxFont;
+  src: url(conthrax-sb.otf);
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,3 +10,60 @@ html, body {
 canvas {
   display: block;
 }
+
+button {
+/*  transparent- rgba*/
+  background-color: rgba(0, 0 , 0, 0.0); /* Green */
+  border: none;
+  color: white;
+  padding: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  font-family: conthraxFont;
+  border-radius: none;
+
+}
+
+button:hover{
+ color: blue;
+}
+
+.playButton {
+/*  transparent- rgba*/
+  background-color: rgba(0, 0 , 0, 0.0); 
+  background-image: url('playButtonPic.png');
+  background-size: cover;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+
+}
+
+.playButton:hover{
+ background-image: url(bluePlayButtonPic.png);
+}
+
+
+.backButtonClass {
+/*  transparent- rgba*/
+  background-color: rgba(0, 0 , 0, 0.0); /* Green */
+  background-image: url(backButton.png);
+  background-size: cover;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  font-size: 2rem;
+
+}
+
+.backButtonClass:hover{
+ background-image: url(blueBackButton.png);
+}
+
+
+
+
+
